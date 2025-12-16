@@ -2,36 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>iPhone AR</title>
-
-  <!-- model-viewer -->
-  <script type="module"
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
-
-  <style>
-    body {
-      margin: 0;
-      background: black;
-    }
-    model-viewer {
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
+  <title>AR Text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#000;">
 
-  <model-viewer
-    src="text.glb"
-    ar
-    ar-modes="quick-look"
-    camera-controls
-    auto-rotate
-    ios-src="text.usdz"
-    alt="3D Text AR">
-  </model-viewer>
+  <!-- AR button -->
+  <a rel="ar" href="text.usdz">
+    <img src="https://developer.apple.com/augmented-reality/quick-look/images/arkit-glyph.png"
+         style="width:200px;"
+         alt="View in AR">
+  </a>
 
 </body>
 </html>
